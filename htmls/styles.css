@@ -124,13 +124,15 @@ body {
     display: block;
     width: 90%;
     margin: 20px auto 10px auto;
-    order: -1; /* позволяет поднять элемент выше, если используется flex */
+    order: -1; /* поднимет кнопку выше блока .card при flex */
+    z-index: 999;
   }
 
   .card {
     position: static;
     width: 90%;
-    margin: 0 auto;
+    margin: 10px auto;
+    height: auto;
     padding: 20px;
     box-sizing: border-box;
   }
@@ -140,16 +142,5 @@ body {
     position: static;
     text-align: left;
     margin-bottom: 10px;
-  }
-
-  .back-button {
-    position: static;
-    display: block;
-    width: 90%;
-    margin: 10px auto;
-  }
-
-  body {
-    font-size: 14px;
   }
 }
