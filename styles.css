@@ -74,7 +74,7 @@ footer {
 
 .credit {
   position: absolute;
-  bottom: -370px; /* или даже -10px, если нужно за границу */
+  bottom: -370px;
   right: 15px;
   font-size: 14px;
   color: #888;
@@ -82,4 +82,18 @@ footer {
   background-color: rgba(255, 255, 255, 0.6);
   padding: 4px 8px;
   border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .credit {
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+    font-size: 12px;
+    color: #888;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 4px 8px;
+    border-radius: 6px;
+    z-index: 1000;
+  }
 }
