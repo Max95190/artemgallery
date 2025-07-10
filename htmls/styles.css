@@ -118,29 +118,40 @@ body {
   }
 }
 
+/* По умолчанию показываем десктопную кнопку, скрываем мобильную */
+.desktop-button {
+  display: inline-flex;
+  position: absolute;
+  top: 530px;
+  left: 1122px;
+  /* остальной стиль как раньше */
+}
+
+.mobile-button {
+  display: none;
+}
+
+/* На телефоне переключаем */
 @media screen and (max-width: 600px) {
-  .blue-button {
-    position: static;
+  .desktop-button {
+    display: none;
+  }
+
+  .mobile-button {
     display: block;
     width: 90%;
     margin: 20px auto 10px auto;
-    order: -1; /* поднимет кнопку выше блока .card при flex */
-    z-index: 999;
+    padding: 14px 20px;
+    position: static;
+    background-color: #297be6;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   }
 
-  .card {
-    position: static;
-    width: 90%;
-    margin: 10px auto;
-    height: auto;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-
-  .card h2,
-  .card h1 {
-    position: static;
-    text-align: left;
-    margin-bottom: 10px;
+  .button-icon {
+    margin-right: 8px;
   }
 }
