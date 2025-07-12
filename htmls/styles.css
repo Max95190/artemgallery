@@ -119,21 +119,66 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .blue-button {
-    position: relative !important;
-    top: 0 !important;
-    left: 0 !important;
-    margin: 20px auto;
-    display: block;
+  body {
+    background-position: center;
+    background-size: cover;
+    font-size: 14px;
+  }
+
+  .photo-container img {
+    position: static;
     width: 90%;
-    z-index: 10;
+    max-width: 320px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
   }
 
   .card {
-    position: relative !important;
-    top: 0 !important;
-    left: 0 !important;
-    margin: 10px auto;
+    position: static;
     width: 90%;
+    margin: 20px auto;
+    height: auto;
+    padding: 16px;
+  }
+
+  .card h2 {
+    position: static;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .card h1 {
+    position: static;
+    font-size: 1em;
+    text-align: left;
+  }
+
+  .blue-button,
+  .back-button {
+    position: static;
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 14px 20px;
+    font-size: 15px;
+    justify-content: center;
+  }
+
+  .button-icon,
+  .icon-back {
+    margin-right: 8px;
+  }
+
+  .credit {
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+    font-size: 12px;
+    background-color: rgba(255,255,255,0.6);
+    padding: 4px 8px;
+    border-radius: 6px;
+    z-index: 1000;
   }
 }
