@@ -134,6 +134,17 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
   }
 
+  .blue-button,
+  .back-button {
+    position: static;
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 14px 20px;
+    font-size: 15px;
+    justify-content: center;
+  }
+  
   .card {
     position: static;
     width: 90%;
@@ -153,17 +164,6 @@ body {
     position: static;
     font-size: 1em;
     text-align: left;
-  }
-
-  .blue-button,
-  .back-button {
-    position: static;
-    display: block;
-    width: 90%;
-    margin: 10px auto;
-    padding: 14px 20px;
-    font-size: 15px;
-    justify-content: center;
   }
 
   .button-icon,
