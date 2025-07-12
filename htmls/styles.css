@@ -117,3 +117,53 @@ body {
     transform: translateY(0) scale(1);
   }
 }
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .photo-container img {
+    position: static;
+    width: 100%;
+    max-width: 320px;
+    margin: auto;
+  }
+
+  .card {
+    position: static;
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .card h2,
+  .card h1 {
+    position: static;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .blue-button,
+  .back-button {
+    position: static;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 14px 20px;
+    text-align: center;
+    font-size: 15px;
+  }
+}
